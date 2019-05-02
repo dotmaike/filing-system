@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import { Grid, GridColumn } from "@progress/kendo-react-grid";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Component } from 'react';
+import { Grid, GridColumn } from '@progress/kendo-react-grid';
+import logo from './logo.svg';
+import './App.css';
 
 class App extends Component {
   state = {
     data: [
-      { ProductName: "Chai", Price: 10 },
-      { ProductName: "Chang", Price: 20 }
+      { ProductName: 'Chai', Price: 10 },
+      { ProductName: 'Chang', Price: 20 }
     ],
-    title: "Hello from KendoReact!"
+    title: 'Hello from KendoReact!'
   };
 
   render() {

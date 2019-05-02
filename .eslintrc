@@ -1,5 +1,9 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true
+  },
   "plugins": ["prettier"],
   "rules": {
     "react/jsx-filename-extension": [
@@ -12,7 +16,8 @@
     "no-underscore-dangle": 0,
     "import/imports-first": ["error", "absolute-first"],
     "import/newline-after-import": "error",
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "no-param-reassign": [2, { "props": false }]
   },
   "globals": {
     "window": true,
@@ -21,7 +26,7 @@
     "FormData": true,
     "FileReader": true,
     "Blob": true,
-    "navigator": true
-  },
-  "parser": "babel-eslint"
+    "navigator": true,
+    "fetch": false
+  }
 }
